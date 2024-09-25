@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import AddDocumentBtn from "@/components/AddDocumentBtn";
+import DeleteModal from "@/components/DeleteModal";
+
 import Header from "@/components/Header";
 import { getDocuments } from "@/lib/actions/room.actions";
 import { dateConverter } from "@/lib/utils";
@@ -65,7 +67,7 @@ const Home = async () => {
                   </div>
                 </Link>
 
-                {/* TODO: ADD A DELETE B */}
+                <DeleteModal roomId={id} />
               </li>
             ))}
           </ul>
