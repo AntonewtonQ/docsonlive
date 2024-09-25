@@ -1,6 +1,8 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    typescript:{
+    },
     images:{
         remotePatterns:[{protocol:'https', hostname:'img.clerk.com'}]
     }
